@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Textile Hub-CART</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+
+    </h:head>
+    <h:body>
+        <!-- Breadcrumb Begin -->
+        <f:view>
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{navigationCDI.checkUser()}" />
+            </f:metadata>
+            <ui:include src="Header.xhtml"/>
+
+            <h:form>
+                <div class="breadcrumb-option">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="breadcrumb__links">
+                                    <a href=""><i class="bi bi-house-fill"></i> Home</a>
+                                    <span>Shopping cart</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Breadcrumb End -->
+
+                <!-- Shop Cart Section Begin -->
+
+
+                <section>
+                    <div class="">
+                        <div class="container">
+                            <div class="row">
+                                <div class="d-flex justify-content-center mt-4">
+                                    <h3>Cart List</h3>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="shop__cart__table">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Price(1Meter)</th>
+                                                    <th>Meters</th>
+                                                    <th>Total</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <h:form>
+                                                    <ui:repeat value="#{userCDI.allCart}" var="c"> 
+                                                        <tr>
+                                                            <td class="cart__product__item">
+                                                                <img src="../Images/#{c.prodId.image}" style="width: 100px;" class="card-img-top mt-2" alt="Product Image"/>
+                                                                <div class="cart__product__item__title">
+                                                                    <h6>#{c.prodId.name}</h6>
+                                                                    <span class="price">By, #{c.prodId.catId.name}</span>
+                                                                    <div class="rating">
+                                                                        <i class="bi bi-star-fill"></i>
+                                                                        <i class="bi bi-star-fill"></i>
+                                                                        <i class="bi bi-star-fill"></i>
+                                                                        <i class="bi bi-star-fill"></i>                                                
+                                                                        <i class="bi bi-star-half"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="cart__price">#{c.prodId.price}rs</td>
+                                                            <td class="cart__quantity">
+                                                                #{c.meters}
+                                                            </td>
+                                                            <td class="cart__total">#{c.amount}<i class="bi bi-currency-rupee"></i></td>
+                                                            <td class="cart__close"><h:commandLink value="" class="bi bi-x-octagon-fill text-danger" action="#{userCDI.removeCart(prodId)}" /></td>
+                                                        </tr>
+                                                    </ui:repeat>
+                                                </h:form>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="cart__btn">
+                                        <h:link value="Continue Shopping" outcome="Products.jsf" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="cart__btn update__btn">
+                                        <h:commandButton class="btn btn-light font-weight-bold" action="#{userCDI.checkout()}" value="CHECK TO PROCEED" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </h:form>
+        </f:view>
+    </h:body>
+</html>

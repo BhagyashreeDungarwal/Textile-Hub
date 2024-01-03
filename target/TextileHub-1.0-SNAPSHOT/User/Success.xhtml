@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Successful</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <style>
+            .card-3d {
+                position: relative;
+                transition: transform 0.5s;
+                border: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .card-3d:hover {
+                transform: perspective(1000px) rotateY(10deg);
+            }
+            .card-img-top{
+                margin-left: 10px; 
+                height: 300px;
+                width: 300px
+            }
+            .card{
+                width: 320px;
+
+            }
+            .card-title{
+                display: flex;
+                justify-content: center;
+            }
+            .card-text{
+                display: flex;
+                justify-content: center;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+            }
+            .container{
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+            }
+
+
+            /* Add other card styles as needed */
+        </style>
+    </h:head>
+    <h:body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card card-3d">
+
+                        <img src="../Images/successful.png" class="card-img-top" alt="Card Image"/>
+                        <div class="card-body">
+                            <h5 class="card-title"> Congratulation..</h5>
+                            <p class="card-text">Your Order successfully placed.</p>
+                            <h:link outcome="Home.jsf" class="btn btn-danger">Back to Home</h:link>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more cards as needed -->
+
+            </div>
+        </div>
+
+        <!-- Bootstrap JS and Popper.js (Optional) -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    </h:body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>TextileHub</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+
+    </h:head>
+    <h:body>
+
+        <ui:composition template="Dashboard.xhtml">
+            <ui:define name="content">
+                <f:view>
+
+                    <div class="m-5" >
+                        <div class="container border  w-75">
+                            <h:form>
+                                <div class="form">
+                                    <h5 class="mt-4 d-flex justify-content-center">Insert Category</h5>
+                                    <div class="form-group m-2">
+                                        <h:outputLabel value="Name:" class="m-2" for="name" />
+                                        <h:inputText id="name" value="#{adminCDI.name}" class="form-control" title="Name" required="true" requiredMessage="The Name field is required."/>
+                                    </div>
+                                    <div class="form-group m-2" >
+
+                                        <h:outputLabel value="Type:" class="m-2" for="type" />
+                                        <h:inputText id="type" value="#{adminCDI.type}" class="form-control" title="Type" required="true" requiredMessage="The Type field is required."/>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-center">
+                                        <h:commandButton value="Insert" class="btn btn-dark m-2" action="#{adminCDI.insertcat()}" />
+                                    </div>
+                                </div>
+                            </h:form>
+                        </div>
+                    </div>
+                </f:view>
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>

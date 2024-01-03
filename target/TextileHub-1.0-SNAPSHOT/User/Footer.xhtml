@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/elegant-icons.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/slicknav.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <h:head>
+        <title>Footer</title>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+    </h:head>
+    <h:body>
+        <ui:composition>
+            <h:form>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-7">
+                                <div class="footer__about">
+                                    <div class="footer__logo">
+                                        <h:outputLink value="./index.xhtml">
+                                            <img src="../Images/Logo.png" alt=""/>
+                                            <!--<h:graphicImage name="../Images/Logo.png" alt="Logo"/>-->
+                                        </h:outputLink>
+                                    </div>
+                                    <p></p>
+                                    <div class="footer__payment">
+                                        <!--                                    <a href="#"><h:graphicImage name="img/payment/payment-1.png" alt="Payment 1"/></a>
+                                                                            <a href="#"><h:graphicImage name="img/payment/payment-2.png" alt="Payment 2"/></a>
+                                                                            <a href="#"><h:graphicImage name="img/payment/payment-3.png" alt="Payment 3"/></a>
+                                                                            <a href="#"><h:graphicImage name="img/payment/payment-4.png" alt="Payment 4"/></a>
+                                                                            <a href="#"><h:graphicImage name="img/payment/payment-5.png" alt="Payment 5"/></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-5">
+                                <div class="footer__widget">
+                                    <h6>Quick links</h6>
+                                    <ul>
+                                        <li><h:outputLink value="#">About</h:outputLink></li>
+                                        <li><h:outputLink value="#">Blogs</h:outputLink></li>
+                                        <li><h:outputLink value="#">Contact</h:outputLink></li>
+                                        <li><h:outputLink value="#">FAQ</h:outputLink></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-4">
+                                <div class="footer__widget">
+                                    <h6>Account</h6>
+                                    <ul>
+                                        <li><h:outputLink value="#">My Account</h:outputLink></li>
+                                        <li><h:outputLink value="#">Orders Tracking</h:outputLink></li>
+                                        <li><h:outputLink value="#">Checkout</h:outputLink></li>
+                                        <li><h:outputLink value="#">Wishlist</h:outputLink></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-8 col-sm-8">
+                                <div class="footer__newslatter">
+                                    <h6>NEWSLETTER</h6>
+                                    <h:form>
+                                        <h:inputText />
+                                        <h:commandButton value="Subscribe" styleClass="site-btn" />
+                                    </h:form>
+                                    <div class="footer__social">
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-youtube"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer__copyright__text">
+                                    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | TextileHub<i class="bi bi-heart-fill"></i> by <a href="https://colorlib.com" target="_blank">Bhagyashree</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </h:form>
+        </ui:composition>
+    </h:body>
+</html>

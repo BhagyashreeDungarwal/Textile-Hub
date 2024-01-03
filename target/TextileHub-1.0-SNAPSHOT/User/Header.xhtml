@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/elegant-icons.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/slicknav.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/header.css" rel="stylesheet" type="text/css"/>
+    <h:head>
+        <title>Textile</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+    </h:head>
+    <h:body>
+        <h:form>
+            <header class="header" >
+                <div class="container-fluid" style="background: none">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="header__logo">
+                                <h:outputLink value="Home.jsf">
+                                    <img src="../Images/Logo.png" style="height: 50px" alt=""/>
+
+                                </h:outputLink>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7 ">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li ><h:link outcome="Home.jsf" value="Home"/></li>
+                                    <!--<li class="active ><h:link outcome="Categories.jsf" value="Category"/></li>-->
+                                    <li ><h:link outcome="Products.jsf" value="Product"/></li>
+                                    <li ><h:link outcome="Gallery" value="Gallery"/></li>
+                                    <li><h:link outcome="Contact.jsf" value="Contact Us"/></li>
+                                    <li><h:link outcome="Ordermaster.jsf" value="Orders"/></li>
+                                    <!--<a href="Testimonials.xhtml"></a>-->
+                                    <li ><h:link outcome="About.jsf" value="About Us"/></li>
+                                                                    </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header__right">
+                                <div class="header__right__auth">
+                                    <!--<h:outputLink value="Logout.jsf">LogOut</h:outputLink>-->
+                                    <!--<h:outputLink value="Registration.jsf">Register</h:outputLink>-->
+                                </div>
+                                <ul class="header__right__widget">
+
+<!--                                    <li><h:outputLink value="#"><span class="bi bi-heart"></span>
+                                            <div class="tip">2</div>
+                                        </h:outputLink></li>-->
+                                    <li><h:link class="bi bi-cart-check" value="" outcome="Cart">
+                                            <!--<div class="tip">2</div>-->
+                                        </h:link></li>
+                                    <li><h:link value="" class="bi bi-person-circle" outcome="Profile">
+                                            <!--<div class="tip">2</div>-->
+                                        </h:link></li>
+                                    <!--<li class="bi bi-person-circle"></li>-->
+                                    <!--<span>#{sessionScope.User}</span>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="canvas__open">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+        </h:form>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </h:body>
+</html>

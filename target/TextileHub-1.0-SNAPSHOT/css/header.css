@@ -1,0 +1,14 @@
+ .transparent-header {
+      background-color: transparent !important; /* Set the background color to transparent */
+      border-color: transparent !important; /* Set the border color to transparent */
+    }
+    body{
+margin-top:20px;
+background:#F0F8FF;
+}
+.text-custom{
+color: #0062ff !important;
+}
+.homeimg{
+     opacity: 0.7;
+}

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>TextileHub</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+
+    </h:head>
+    <h:body>
+
+        <ui:composition template="Dashboard.xhtml">
+            <ui:define name="content">
+                <f:view>
+                    <h:form>
+                        <div class="table-responsive" style="margin-top: 2%">
+                            <div class="d-flex justify-content-center">
+                                <h1><h:outputText style="margin: 5%" value="Address"/></h1>
+                            </div>
+
+                            <div class="card mt-lg-4">
+                                <div class="card-body">
+                                    <table id="datatablesSimple">
+                                        <thead>
+                                            <tr>
+                                                <th> Address</th>
+                                                <th> Contact</th>
+                                                <th>Alt Address</th>
+                                                <th> City</th>
+                                                <th> State</th>
+                                                <th>Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th> Address</th>
+                                                <th> Contact</th>
+                                                <th>Alt Address</th>
+                                                <th> City</th>
+                                                <th> State</th>
+                                                <th>Email</th>
+                                            </tr>
+                                        </tfoot>
+                                        <ui:repeat value="#{adminCDI.getalladd()}" var="c">
+                                            <tr>
+                                                <td>#{c.address}</td>
+                                                <td>#{c.contactNo}</td>
+                                                <td>#{c.altAddress}</td>
+                                                <td>#{c.city}</td>
+                                                <td>#{c.state}</td>
+                                                <td>#{c.userEmail.userEmail}</td>
+                                            </tr>
+                                        </ui:repeat>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--                        <div class="table-responsive container " style="margin-top: 3%">
+                                                    <div class="d-flex justify-content-center">
+                                                        <h1><h:outputText style="margin: 5%" value="AddressList"/></h1>
+                                                    </div>
+                                                    <div class="container">
+                                                        <h:dataTable class="table table-striped table-hover" value="#{adminCDI.alladd}" var="item">
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="Id"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.addId}"/>
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="Address"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.address}"/>
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="ContactNo"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.contactNo}"/>
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="AltAddress"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.altAddress}"/>
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="City"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.city}"/>
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="State"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.state}"/>
+                                                            </h:column>
+                                                            <h:column>
+                                                                <f:facet name="header">
+                                                                    <h:outputText value="UserEmail"/>
+                                                                </f:facet>
+                                                                <h:outputText value="#{item.userEmail.userEmail}"/>
+                                                            </h:column>
+                                                        </h:dataTable>
+                                                    </div>
+                                                </div>-->
+                    </h:form>
+                </f:view>
+            </ui:define>
+        </ui:composition> 
+    </h:body>
+</html>
