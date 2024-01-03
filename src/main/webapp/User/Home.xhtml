@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <a href="Header.xhtml"></a>
+        <a href="Footer.xhtml"></a>
+        <title>Facelet Title</title>
+        <link href="../css/header.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    </h:head>
+    <h:body>
+
+        <ui:include src="Header.xhtml" />
+
+        <!-- Categories Section Begin -->
+        <section class="categories">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 p-0">
+                        <div class="categories__item categories__large__item set-bg"
+                             style="background-image: url('../Images/gallery/h4.jpg');">
+                            <div class="categories__text text-light " style="margin-left: 20%">
+                                <h1 class="text-light">Textile Hub</h1>
+                                <p class="text-light"> Our mission is to <br />
+                                    make your life easier.</p>
+                                <h:link outcome="Products.jsf" value="Shop now"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                <div class="categories__item set-bg" style="background-image: url('../Images/gallery/h1.jpg');">
+<!--                                    <div class="categories__text">
+                                        <h4 class="text-light">Men’s fashion</h4>
+                                        <p class="text-light">358 items</p>
+                                        <a href="#">Shop now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                <div class="categories__item set-bg" style="background-image: url('../Images/gallery/h2.jpg');">
+<!--                                    <div class="categories__text">
+                                        <h4 class="text-light">Kid’s fashion</h4>
+                                        <p class="text-light">273 items</p>
+                                        <a href="#">Shop now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                <div class="categories__item set-bg" style="background-image: url('../Images/gallery/h3.jpg');">
+<!--                                    <div class="categories__text">
+                                        <h4 class="text-light">Cosmetics</h4>
+                                        <p class="text-light">159 items</p>
+                                        <a href="#">Shop now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                <div class="categories__item set-bg" style="background-image: url('../Images/gallery/h5.jpg');">
+<!--                                    <div class="categories__text">
+                                        <h4 class="text-light">Accessories</h4>
+                                        <p class="text-light">792 items</p>
+                                        <a href="#">Shop now</a>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="bi bi-car-front-fill"></i>
+                    <h6>Free Shipping</h6>
+                    <p>For all oder over $99</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="bi bi-cash"></i>
+                    <h6>Money Back Guarantee</h6>
+                    <p>If good have Problems</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="bi bi-browser-chrome"></i>
+                    <h6>Online Support 24/7</h6>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="bi bi-headphones"></i>
+                    <h6>Payment Secure</h6>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="discount">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="discount__pic" style="height: 390px">
+                    <img src="../Images/gallery/2.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="discount__text">
+                    <div class="discount__text__title">
+                        <span>Discount</span>
+                        <h2>New year 2024</h2>
+                        <h5><span>Sale</span> 50%</h5>
+                    </div>
+                    <div class="discount__countdown" id="countdown-time">
+                        <div class="countdown__item">
+                            <span>2</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>18</span>
+                            <p>Hour</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>46</span>
+                            <p>Min</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>05</span>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                    <h:link outcome="Products.jsf">Shop now</h:link>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+
+        <ui:include src="Footer.xhtml"/>
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/mixitup.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
+    </h:body>
+
+</html>
