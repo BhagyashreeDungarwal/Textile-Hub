@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/elegant-icons.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/slicknav.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <h:head>
+        <title>Textile</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"/>
+    </h:head>
+    <h:body>
+
+        <!--        <h:link style="color:red" id="link" value="Login" outcome="/Login"/>-->
+        <h:form><header class="header" >
+                <div class="container-fluid" style="background: none">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="header__logo">
+                                <h:outputLink value="Home.jsf">
+                                    <img src="Images/Logo.png" style="height: 60px" alt=""/>
+
+                                </h:outputLink>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <nav class="header__menu">
+                                <ul>
+                                    <li ><h:link  value="Home"/></li>
+                                    <!--<li class="active ><h:link outcome="Categories.jsf" value="Category"/></li>-->
+                                    <li ><h:link outcome="Login.jsf" value="Product"/></li>
+                                    <li ><h:link outcome="Login.jsf"  value="Gallery"/></li>
+                                    <li><h:link outcome="Login.jsf" value="Contact Us"/></li>
+                                    <li><h:link outcome="Login.jsf" value="Testimonials"/></li>
+                                    <li ><h:link outcome="Login.jsf" value="About Us"/></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="header__right">
+                                <div class="header__right__auth">
+                                    <h:link style="color:black" id="link" value="Login" outcome="/Login"/>
+
+                                    <h:outputLink value="Registration.jsf">Register</h:outputLink>
+                                </div>
+                                <ul class="header__right__widget">
+                                  
+                                    <li><h:outputLink value="#"><span class="bi bi-heart"></span>
+                                            <!--<div class="tip">2</div>-->
+                                        </h:outputLink></li>
+                                    <li><h:outputLink value="#"><span class="bi bi-cart-check"></span>
+                                            <!--<div class="tip">2</div>-->
+                                        </h:outputLink></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="canvas__open">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Categories Section Begin -->
+            <section class="categories">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 p-0">
+                            <div class="categories__item categories__large__item set-bg"
+                                 style="background-image: url('Images/gallery/h4.jpg');">
+                                <div class="categories__text text-light " style="margin-left: 20%">
+                                    <h1 class="text-light">Textile Hub</h1>
+                                    <p class="text-light"> Our mission is to <br />
+                                        make your life easier.</p>
+                                    <h:link value="Shop now"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                    <div class="categories__item set-bg" style="background-image: url('Images/gallery/h1.jpg');">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                    <div class="categories__item set-bg" style="background-image: url('Images/gallery/h2.jpg');">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                    <div class="categories__item set-bg" style="background-image: url('Images/gallery/h3.jpg');">
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                                    <div class="categories__item set-bg" style="background-image: url('Images/gallery/h5.jpg');">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services spad">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="services__item">
+                                <i class="bi bi-car-front-fill"></i>
+                                <h6>Free Shipping</h6>
+                                <p>For all oder over $99</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="services__item">
+                                <i class="bi bi-cash"></i>
+                                <h6>Money Back Guarantee</h6>
+                                <p>If good have Problems</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="services__item">
+                                <i class="bi bi-browser-chrome"></i>
+                                <h6>Online Support 24/7</h6>
+                                <p>Dedicated support</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="services__item">
+                                <i class="bi bi-headphones"></i>
+                                <h6>Payment Secure</h6>
+                                <p>100% secure payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </h:form>
+        <ui:include src="User/Footer.xhtml"/>
+    </h:body>
+</html>
+
